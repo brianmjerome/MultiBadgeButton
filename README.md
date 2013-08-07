@@ -9,5 +9,6 @@ This class is fully customizable and open-source as long as this work is credite
 Installation
 ================
   -Copy the MultiBadgeButton.js and multibadgebutton.css into your working project directory following your project's architecture.
+  
   -You can initialize this component by the xtype 'multibadgebutton'.
   
