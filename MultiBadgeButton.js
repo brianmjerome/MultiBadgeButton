@@ -2,7 +2,7 @@
  * The MultiBadgeButton supports up to 4 different badges. Each badge is customizable with CSS.
  * The default locations are in a counter-clockwise formation as follows:
  *     Badge 1: top-right
- *     Badge 2: top-left
+ *	   Badge 2: top-left
  *	   Badge 3: bottom-left
  *	   Badge 4: bottom-right
  *
@@ -152,20 +152,20 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 		if(this._badgeAmount > 4 || this._badgeAmount < 1){
 			this._badgeAmount = 2;
 		}
-
+		
 		this.badge2Element.addCls(this._badge2Cls);
 		this.updateBadgeText(this._badge2Text, 2);
-
+		
 		this.badge3Element.addCls(this._badge3Cls);
 		this.updateBadgeText(this._badge3Text, 3);
-
+		
 		this.badge4Element.addCls(this._badge4Cls);
 		this.updateBadgeText(this._badge4Text, 4);
-
+		
 		this.callParent();
 	},
 	/**
-	 * @private
+     * @private
 	 * @param badgeText The modyfing badge text.
 	 * @param id {Optional} Update the text specified by the badge number.
      */
@@ -176,8 +176,8 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 			});
 			return;
 		}
-
-        var element = this.element,
+		
+		var element = this.element,
             badgeElement = this['badge' + (!id || id == 1 ? '' : id) + 'Element'];
 
         if (badgeText) {
@@ -194,7 +194,7 @@ Ext.define('Ext.ux.MultiBadgeButton', {
         element[(badgeText) ? 'addCls' : 'removeCls'](this.getHasBadgeCls());
     },
 	/**
-	 * @private
+     * @private
 	 * @param id {Optional} Update the class specified by the badge number - id.
      */
     updateBadgeCls: function(badgeCls, oldBadgeCls, id) {
@@ -204,9 +204,9 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 			});
 			return;
 		}
-		this['badge' + (!id || id == 1 ? '' : id) + 'Element'].replaceCls(oldBadgeCls, badgeCls);
+        this['badge' + (!id || id == 1 ? '' : id) + 'Element'].replaceCls(oldBadgeCls, badgeCls);
     },
-
+	
 	/**
 	 * Convenience function
 	 * Modifies the badge text of which badge is specified.
