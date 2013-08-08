@@ -192,12 +192,12 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 			remove = this['_badge' + i + 'Text'];
 		}
 		element[(badgeText) ? 'addCls' : 'removeCls'](this.getHasBadgeCls());
-    },
+	},
 	/**
 	 * @private
 	 * @param id {Optional} Update the class specified by the badge number - id.
-     */
-    updateBadgeCls: function(badgeCls, oldBadgeCls, id) {
+	 */
+	updateBadgeCls: function(badgeCls, oldBadgeCls, id) {
 		if(id && id > this._badgeAmount){
 			Ext.Error.raise({
 				msg: 'Invalid badge number. Must be (1 - ' + this._badgeAmount + ').'
