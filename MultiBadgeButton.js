@@ -165,7 +165,7 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 		this.callParent();
 	},
 	/**
-     * @private
+	 * @private
 	 * @param badgeText The modyfing badge text.
 	 * @param id {Optional} Update the text specified by the badge number.
      */
@@ -194,7 +194,7 @@ Ext.define('Ext.ux.MultiBadgeButton', {
         element[(badgeText) ? 'addCls' : 'removeCls'](this.getHasBadgeCls());
     },
 	/**
-     * @private
+	 * @private
 	 * @param id {Optional} Update the class specified by the badge number - id.
      */
     updateBadgeCls: function(badgeCls, oldBadgeCls, id) {
@@ -204,7 +204,7 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 			});
 			return;
 		}
-        this['badge' + (!id || id == 1 ? '' : id) + 'Element'].replaceCls(oldBadgeCls, badgeCls);
+		this['badge' + (!id || id == 1 ? '' : id) + 'Element'].replaceCls(oldBadgeCls, badgeCls);
     },
 
 	/**
