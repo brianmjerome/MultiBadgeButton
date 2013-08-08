@@ -169,7 +169,7 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 	 * @param badgeText The modyfing badge text.
 	 * @param id {Optional} Update the text specified by the badge number.
      */
-    updateBadgeText: function(badgeText, id) {
+	updateBadgeText: function(badgeText, id) {
 		if(id && id > this._badgeAmount){
 			Ext.Error.raise({
 				msg: 'Invalid badge number. Must be (1 - ' + this._badgeAmount + ').'
@@ -178,15 +178,15 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 		}
 		
 		var element = this.element,
-            badgeElement = this['badge' + (!id || id == 1 ? '' : id) + 'Element'];
+			badgeElement = this['badge' + (!id || id == 1 ? '' : id) + 'Element'];
 
-        if (badgeText) {
-            badgeElement.show();
-            badgeElement.setText(badgeText);
-        }
-        else {
-            badgeElement.hide();
-        }
+		if (badgeText) {
+			badgeElement.show();
+			badgeElement.setText(badgeText);
+		}
+		else {
+			badgeElement.hide();
+		}
 		var remove = badgeText;
 		for(var i = 2; i < this._badgeAmount; i++){
 			remove = this['_badge' + i + 'Text'];
@@ -204,8 +204,8 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 			});
 			return;
 		}
-        this['badge' + (!id || id == 1 ? '' : id) + 'Element'].replaceCls(oldBadgeCls, badgeCls);
-    },
+		this['badge' + (!id || id == 1 ? '' : id) + 'Element'].replaceCls(oldBadgeCls, badgeCls);
+	},
 	
 	/**
 	 * Convenience function
