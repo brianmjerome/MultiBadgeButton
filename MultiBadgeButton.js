@@ -1,4 +1,3 @@
-```javascript
 /**
  * The MultiBadgeButton supports up to 4 different badges. Each badge is customizable with CSS.
  * The default locations are in a counter-clockwise formation as follows:
@@ -219,4 +218,3 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 		this.updateBadgeText(text, id);
 	}
 });
-```
