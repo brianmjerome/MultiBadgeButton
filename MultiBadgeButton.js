@@ -113,11 +113,11 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 		badge4Text: null
 	},
 	template: [
-        {
-            tag: 'span',
-            reference: 'badgeElement',
-            hidden: true
-        },
+		{
+			tag: 'span',
+			reference: 'badgeElement',
+			hidden: true
+		},
 		{
 			tag: 'span',
 			reference: 'badge2Element',
@@ -136,17 +136,17 @@ Ext.define('Ext.ux.MultiBadgeButton', {
 			className: 'x-badge-4',
 			hidden: true
 		},
-        {
-            tag: 'span',
-            className: Ext.baseCSSPrefix + 'button-icon',
-            reference: 'iconElement'
-        },
-        {
-            tag: 'span',
-            reference: 'textElement',
-            hidden: true
-        }
-    ],
+		{
+			tag: 'span',
+			className: Ext.baseCSSPrefix + 'button-icon',
+			reference: 'iconElement'
+		},
+		{
+			tag: 'span',
+			reference: 'textElement',
+			hidden: true
+		}
+	],
 	initialize: function(){
 		// Check for incorrect badge amount
 		if(this._badgeAmount > 4 || this._badgeAmount < 1){
