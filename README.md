@@ -1,9 +1,9 @@
 MultiBadgeButton
 ================
 
-Class: Ext.ux.MultiBadgeButton
-Author: Brian Jerome
-Version: 0.3
+**Class:** Ext.ux.MultiBadgeButton<br>
+**Author:** Brian Jerome<br>
+**Version:** 0.3<br>
 
 Ext.Button extension for Sencha Touch 2.x
 
@@ -19,7 +19,7 @@ The default locations are in a counter-clockwise formation as follows:
 The MultiBadgeButton can also just take 1 badge and still behave like a normal Ext.Button, but what is the fun in that?
 
 
-You can view a Demo at: https://fiddle.sencha.com/#fiddle/6q
+You can view a **Demo** fiddle at: https://fiddle.sencha.com/#fiddle/6q
 
 Examples
 ================
