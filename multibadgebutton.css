@@ -1,6 +1,6 @@
 /* red */
 .x-badge {
-  border: 1px solid #aaa;
+	border: 1px solid #aaa;
 	z-index: 2;
 	position: absolute !important;
 	width: auto;
