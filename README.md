@@ -3,7 +3,7 @@ MultiBadgeButton
 
 **Class:** Ext.ux.MultiBadgeButton<br>
 **Author:** Brian Jerome<br>
-**Version:** 0.3<br>
+**Version:** 1.0<br>
 
 Ext.Button extension for Sencha Touch 2.x
 
