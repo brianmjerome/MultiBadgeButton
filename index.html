@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Ext.MultiBadgeButton by brianmjerome</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Ext.MultiBadgeButton</h1>
+        <h2>Ext.Button extension for Sencha Touch 2.x</h2>
+        <a href="https://github.com/brianmjerome/MultiBadgeButton" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="multibadgebutton" class="anchor" href="#multibadgebutton"><span class="octicon octicon-link"></span></a>MultiBadgeButton</h1>
+
+<p><strong>Class:</strong> Ext.ux.MultiBadgeButton<br><strong>Author:</strong> Brian Jerome<br><strong>Version:</strong> 1.0<br></p>
+
+<p>Ext.Button extension for Sencha Touch 2.x</p>
+
+<p>The MultiBadgeButton supports up to 4 different badges. Each badge is customizable with CSS.
+This class is fully customizable and open-source as long as this work is credited.</p>
+
+<p>The default locations are in a counter-clockwise formation as follows:</p>
+
+<ul>
+<li>Badge 1: top-right</li>
+<li>Badge 2: top-left</li>
+<li>Badge 3: bottom-left</li>
+<li>Badge 4: bottom-right</li>
+</ul><p>The MultiBadgeButton can also just take 1 badge and still behave like a normal Ext.Button, but what is the fun in that?</p>
+
+<p>You can view a <strong>Demo</strong> fiddle at: <a href="https://fiddle.sencha.com/#fiddle/6q">https://fiddle.sencha.com/#fiddle/6q</a></p>
+
+<h1>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h1>
+
+<h3>
+<a name="simple-multibadgebutton" class="anchor" href="#simple-multibadgebutton"><span class="octicon octicon-link"></span></a>Simple MultiBadgeButton</h3>
+
+<p>You can create a simple MultiBadgeButton with this code:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">Ext</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="s1">'Ext.Container'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">fullscreen</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">padding</span><span class="o">:</span> <span class="s1">'2em'</span><span class="p">,</span>
+  <span class="nx">items</span><span class="o">:</span> <span class="p">[{</span>
+    <span class="nx">xtype</span><span class="o">:</span> <span class="s1">'multibadgebutton'</span><span class="p">,</span>
+    <span class="nx">text</span><span class="o">:</span> <span class="s1">'4 Badges'</span><span class="p">,</span>
+    <span class="nx">badgeAmount</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="nx">badgeText</span><span class="o">:</span> <span class="s1">'1'</span><span class="p">,</span>
+    <span class="nx">badge2Text</span><span class="o">:</span> <span class="s1">'2'</span><span class="p">,</span>
+    <span class="nx">badge3Text</span><span class="o">:</span> <span class="s1">'3'</span><span class="p">,</span>
+    <span class="nx">badge4Text</span><span class="o">:</span> <span class="s1">'4'</span><span class="p">,</span>
+    <span class="nx">width</span><span class="o">:</span> <span class="mi">150</span>
+  <span class="p">}]</span>
+<span class="p">});</span>
+</pre></div>
+
+<h3>
+<a name="setting-badge-texts" class="anchor" href="#setting-badge-texts"><span class="octicon octicon-link"></span></a>Setting Badge Texts</h3>
+
+<p>Setting the badge text is super easy. Just supply the text with an optional badge number:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="c1">//sets the text of the second badge on the MultiBadgeButton referenced in 'button'.</span>
+<span class="nx">button</span><span class="p">.</span><span class="nx">setBadgeText</span><span class="p">(</span><span class="s1">'Foo'</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+</pre></div>
+
+<h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<p>Copy the MultiBadgeButton.js and multibadgebutton.css into your working project directory following your project's architecture.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/brianmjerome/MultiBadgeButton/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/brianmjerome/MultiBadgeButton/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/brianmjerome/MultiBadgeButton"></a> is maintained by <a href="https://github.com/brianmjerome">brianmjerome</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
